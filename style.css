@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+html {
+    background: rgb(0, 0, 0);
+}
+
+.frame {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.board {
+    display: inline-grid;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.493);
+
+}
+
+.board div {
+    width: 20px;
+    height: 20px;
+    font-size: 6px;
+    text-align: center;
+    color: rgb(172, 172, 172);
+}
+
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.active {
+    background-color: blueviolet;
+}
+
+.head.left,
+.head.up,
+.head.down,
+.head.right {
+    background-color: coral;
+}
+
+.head.left {
+    border-radius: 50% 0 0 50%;
+}
+
+.head.up {
+    border-radius: 50% 50% 0 0;
+}
+
+.head.down {
+    border-radius: 0 0 50% 50%;
+}
+
+.head.right {
+    border-radius: 0 50% 50% 0;
+}
+
+.apple::after {
+    content: "";
+    font-size: 15px;
+    color: red;
+}
